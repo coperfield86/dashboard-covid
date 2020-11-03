@@ -44,14 +44,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-#ignorando el app-config
-/src/assets/config/app-config.json
-
-#ignorando los models
-/src/assets/models3d
-
-#ignorando el package lock
-package-lock.json
-/src/assets/config/app-config.json
-*.log
