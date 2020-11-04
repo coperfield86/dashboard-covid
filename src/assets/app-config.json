@@ -1,0 +1,6 @@
+{
+  "apiCovidUrl" : "",
+  "apiChuckNorrisUrl" : "https://api.chucknorris.io/jokes/random",
+  "apiNumbersUrl" : "http://numbersapi.com",
+  "maxNumber" : 1000000
+}
