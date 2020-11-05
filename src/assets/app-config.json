@@ -1,6 +1,8 @@
 {
-  "apiCovidUrl" : "",
+  "apiCovidUrl" : "api/v1/stats",
   "apiChuckNorrisUrl" : "https://api.chucknorris.io/jokes/random",
   "apiNumbersUrl" : "http://numbersapi.com",
+  "apiGeoIpUrl" : "https://get.geojs.io/v1/ip/geo.json",
+  "apiCountryUrl" : "https://restcountries.eu/rest/v2/all",
   "maxNumber" : 1000000
 }

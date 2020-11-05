@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "dashboar-covid": {
+    "dashboard-covid": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/dashboar-covid",
+            "outputPath": "dist/dashboard-covid",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,19 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "dashboar-covid:build"
+            "browserTarget": "dashboard-covid:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
-              "browserTarget": "dashboar-covid:build:production"
+              "browserTarget": "dashboard-covid:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "dashboar-covid:build"
+            "browserTarget": "dashboard-covid:build"
           }
         },
         "test": {
@@ -117,16 +118,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "dashboar-covid:serve"
+            "devServerTarget": "dashboard-covid:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "dashboar-covid:serve:production"
+              "devServerTarget": "dashboard-covid:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "dashboar-covid"
+  "defaultProject": "dashboard-covid"
 }

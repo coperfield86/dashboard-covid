@@ -10,6 +10,7 @@ export class RestClientErrorHandlerService {
     constructor() {}
 
     public handleError(httpErrorResponse: HttpErrorResponse) {
+      console.log(httpErrorResponse);
       return throwError(httpErrorResponse.error);
     }
 }
