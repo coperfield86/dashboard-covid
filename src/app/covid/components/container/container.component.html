@@ -1,0 +1,13 @@
+<div class="country-selector-container" *ngIf="countries && currentCountry">
+  <p>Seleccione otro pais:</p>
+  <select (change)="onCurrentCountryChange($event.target.value)">
+    <option
+      *ngFor="let country of countries"
+      [selected]="country.alpha2Code == currentCountry.alpha2Code"
+      value="{{country.alpha2Code}}">
+      {{country.nativeName}}
+    </option>
+  </select>
+</div>
+<app-covid *ngIf="userCountryData" [country]="currentCountry"></app-covid>
+<app-country-data *ngIf="currentCountry" [country]="currentCountry"></app-country-data>

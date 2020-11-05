@@ -1,0 +1,11 @@
+<h1>Datos del covid en: {{country.nativeName}}</h1>
+<div style="height: 300px;">
+  <canvas baseChart *ngIf="citiesDataSets"
+          [datasets]="citiesDataSets"
+          [labels]="citieslabels"
+          [options]="options"
+          [colors]="barChartColors"
+          [legend]="true"
+          [chartType]="barChartType">
+  </canvas>
+</div>

@@ -1,0 +1,13 @@
+<div class="container" *ngIf="country">
+  <h1>Datos de {{country.nativeName}}</h1>
+  <h3>Capital: {{country.capital}}</h3>
+  <h3>Idiomas que se hablan:</h3>
+  <ul>
+    <li *ngFor="let language of country.languages">{{language.nativeName}}</li>
+  </ul>
+  <h3>Monedas:</h3>
+  <ul>
+    <li *ngFor="let currency of country.currencies">{{currency.name}}</li>
+  </ul>
+</div>
+

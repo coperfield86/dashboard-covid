@@ -1,0 +1,6 @@
+<h1>Datos Interesantes sobre Chuck Norris</h1>
+<div *ngIf="chuckNorrisInfo">
+  <img [src] = chuckNorrisInfo.icon_url >
+  <p>{{chuckNorrisInfo.value}}</p>
+  <a target="_blank" [href] = chuckNorrisInfo.url>Leer más</a>
+</div>
