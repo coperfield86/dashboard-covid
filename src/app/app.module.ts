@@ -23,8 +23,6 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
     HttpClientModule
   ],
   providers: [
-    AppConfigLoaderService,
-    RestClientService,
     {
       provide: APP_INITIALIZER,
       deps: [AppConfigLoaderService],
